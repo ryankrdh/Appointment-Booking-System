@@ -1,0 +1,41 @@
+.dr-introduction {
+	padding: 50px 0;
+	background-color: #c9e7ff;
+}
+
+.dr-introduction-txt h2 {
+	font-size: 36px;
+	line-height: 48px;
+	margin-bottom: 23px;
+	color: #222;
+	font-family: 'marker felt', sans-serif;
+}
+
+.dr-introduction-txt p {
+	margin-bottom: 15px;
+	font-weight: 300;
+	color: #494949;
+	font-family: 'Josefin Sans', serif;
+	padding-bottom: 10px;
+}
+
+.doctor-image-container {
+	width: 300px;
+	height: 300px;
+	border: 4px solid #94c0e5;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+
+.doctor-boba-image-size {
+	/* width: 80%;
+	height: auto; */
+	width: 80%;
+	height: auto;
+	position: absolute; /* Use absolute positioning */
+	right: 20px; /* Move the image 20 pixels to the right */
+	top: 70%; /* Center the image vertically */
+	transform: translateY(-50%); /* Adjust vertical positioning using transform */
+}

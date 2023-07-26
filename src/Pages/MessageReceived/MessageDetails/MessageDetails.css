@@ -1,0 +1,19 @@
+.message-wrapper {
+	background-color: #c9e7ff;
+}
+
+.about-thank-you {
+	color: #279b61;
+	font-family: 'Josefin Sans', serif-sans;
+}
+
+.about-my-photo {
+	width: 50%;
+	height: auto;
+}
+
+.tooth-run-img {
+	position: relative;
+	width: 20%;
+	height: 130px;
+}

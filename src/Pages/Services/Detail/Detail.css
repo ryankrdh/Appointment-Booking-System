@@ -1,0 +1,25 @@
+.single-service-box-detail {
+	border-radius: 5px;
+	padding: 60px 47px 0px;
+	margin-top: 30px;
+	transition: 0.5s;
+	background: transparent;
+	text-align: center;
+}
+
+.about-detail {
+	background-color: #c9e7ff;
+}
+.service-icon {
+	margin-bottom: 44px;
+}
+
+@media only screen and (max-width: 426px) {
+	.p-5 {
+		padding: 6px !important;
+	}
+
+	.pt-xs-5 {
+		padding-top: 40px;
+	}
+}

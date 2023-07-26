@@ -1,0 +1,48 @@
+.about-content-sec {
+	padding: 0;
+	background-color: white;
+}
+
+.about-content-sec p {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-inner {
+	color: #666;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.text-a {
+	background-color: #94c0e5;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+}
+
+.text-ac {
+	color: rgb(255, 255, 255);
+}
+
+.text-b {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+}
+
+.text-bc {
+	color: #94c0e5;
+}
+
+/* for mobile responsive */
+@media only screen and (max-width: 426px) {
+	.content-inner {
+		margin: 0 !important;
+		width: 100% !important;
+	}
+
+	.about-content-sec {
+		padding: 70px 0;
+	}
+}

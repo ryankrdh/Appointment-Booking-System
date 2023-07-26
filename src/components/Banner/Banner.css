@@ -1,0 +1,42 @@
+.banner-all {
+	padding: 70px 0 50px 0;
+	background-color: #94c0e5;
+}
+
+.banner-animate {
+	position: relative;
+	z-index: 2;
+}
+
+.section-title {
+	columns: rgb(255, 255, 255);
+}
+
+.section-title p {
+	color: #279b61 !important;
+	font-family: 'Josefin sans', serif;
+}
+
+.team-photo {
+	width: 400px;
+	height: auto;
+	border-radius: 10%;
+}
+
+.animate-icon1 {
+	position: relative;
+	width: 40%;
+	height: auto;
+	right: 0%;
+	bottom: -30px;
+	animation: movebounce 3s linear infinite;
+}
+
+.animate-icon2 {
+	position: relative;
+	width: 25%;
+	height: auto;
+	right: 0%;
+	bottom: -30px;
+	animation: movebounce 2.5s linear infinite;
+}
