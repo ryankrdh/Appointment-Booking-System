@@ -22,7 +22,7 @@
 }
 
 .single-service-box {
-	border: 1px solid #36bcba;
+	border: 1px solid #45e8c2;
 	border-radius: 5px;
 	padding: 60px 47px 70px;
 	margin-top: 30px;
@@ -32,7 +32,7 @@
 }
 
 .single-service-box:hover {
-	background: #36bcba;
+	background: #45e8c2;
 	cursor: cell;
 	border-color: transparent;
 }
@@ -58,5 +58,5 @@
 }
 
 .single-service-box a:hover {
-	color: #45e8c2 !important;
+	color: #eda84e !important;
 }

@@ -7,7 +7,7 @@ import './Content.css';
 const Content = () => {
 	useEffect(() => {
 		AOS.init({
-			duration: 2000,
+			duration: 1500,
 		});
 		AOS.refresh();
 	}, []);

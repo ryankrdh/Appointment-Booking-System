@@ -248,39 +248,6 @@ const Content = () => {
 			<Row className="text-b">
 				<Col md={12} lg={12} className="text-center">
 					<div className="section-title text-bc" data-aos="fade">
-						<h1>What Is A Cavity?</h1>
-					</div>
-					<p className="w-50 m-auto content-inner text-bc" data-aos="fade">
-						A cavity is a small hole that forms inside the tooth because of
-						tooth decay. Cavities are formed when plaque buildup on the outside
-						of the tooth combines with sugars and starches in the food you eat.
-						This produces an acid that can eat away the enamel on your tooth. If
-						a cavity is left untreated, it can lead to more serious oral health
-						problems. Cavities can be prevented by remembering to brush your
-						teeth at least two times a day and floss between teeth at least
-						once.
-					</p>
-				</Col>
-			</Row>
-			<Row className="text-a">
-				<Col md={12} lg={12} className="text-center">
-					<div className="section-title text-ac" data-aos="fade">
-						<h1>What Is A Filling?</h1>
-					</div>
-					<p className="w-50 m-auto content-inner text-ac" data-aos="fade">
-						A filling is a synthetic material that your dentist uses to fill a
-						cavity after all of the tooth decay has been removed. Fillings do
-						not generally hurt because your dentist will numb your mouth with an
-						anesthetic. Fillings are made from a variety of different materials,
-						including composites, gold, or ceramic. If you need a filling, be
-						sure to talk to your doctor about what type is best for you and your
-						teeth.
-					</p>
-				</Col>
-			</Row>
-			<Row className="text-b">
-				<Col md={12} lg={12} className="text-center">
-					<div className="section-title text-bc" data-aos="fade">
 						<h1>How Often Should I Brush My Teeth?</h1>
 					</div>
 					<p className="w-50 m-auto content-inner text-bc" data-aos="fade">
@@ -292,84 +259,6 @@ const Content = () => {
 						you brush your teeth. You should spend at least a minute on the top
 						teeth and a minute on the bottom teeth, and remember to brush your
 						tongue; it will help keep your breath smelling fresh!
-					</p>
-				</Col>
-			</Row>
-			<Row className="text-a">
-				<Col md={12} lg={12} className="text-center">
-					<div className="section-title text-ac" data-aos="fade">
-						<h1>When Should I Change My Toothbrush?</h1>
-					</div>
-					<p className="w-50 m-auto content-inner text-ac" data-aos="fade">
-						Your toothbrush will eventually wear out, especially if you are
-						brushing your teeth twice a day for two to three minutes each time.
-						Your dentist recommends that adults and children change their
-						toothbrush every three months. If you are using an electric
-						toothbrush, be sure to read the directions because you may not need
-						to change toothbrush heads as frequently. Patients with gum disease
-						are encouraged to change their toothbrush every four to six weeks to
-						keep any bacteria from spreading. After brushing, rinse your
-						toothbrush with hot water to kill germs and keep the bristles clean.
-						If you’ve been sick, be sure to change your toothbrush as soon as
-						possible.
-					</p>
-				</Col>
-			</Row>
-			<Row className="text-b">
-				<Col md={12} lg={12} className="text-center">
-					<div className="section-title text-bc" data-aos="fade">
-						<h1>What Is Gum Disease?</h1>
-					</div>
-					<p className="w-50 m-auto content-inner text-bc" data-aos="fade">
-						Also known as periodontal disease, gum disease is mostly caused by
-						plaque and bacteria buildup that is not treated in its early stage.
-						Other causes of periodontal disease include tobacco use, teeth
-						grinding, some medications, and genetics. Gingivitis is the
-						beginning stage of gum disease, and, if detected, is treatable.
-						Gingivitis left untreated may turn into gum disease. Advanced gum
-						disease will lead to tooth and bone loss, and is a permanent
-						condition. Brushing your teeth regularly and visiting the dentist
-						every six months will help prevent gingivitis and more severe cases
-						of periodontal disease. Common signs of gum disease:
-						<ul></ul>
-						<li>Red, irritated, bleeding, or swollen gums</li>
-						<li>Chronic bad breath</li>
-						<li>Loose teeth, or loss of teeth</li>
-						<li>Extreme tooth sensitivity</li>
-						<li>Receding gum line</li>
-						<li>Abscessed teeth</li>
-					</p>
-				</Col>
-			</Row>
-			<Row className="text-a">
-				<Col md={12} lg={12} className="text-center">
-					<div className="section-title text-ac" data-aos="fade">
-						<h1>
-							If I Have Braces, Do I Still Need Dental Checkups Every Six
-							Months?
-						</h1>
-					</div>
-					<p className="w-50 m-auto content-inner text-ac" data-aos="fade">
-						Yes! In fact, it’s even more important that patients receiving
-						orthodontic treatment visit their dentist regularly. With braces,
-						food may be caught in places that your toothbrush can’t reach. This
-						causes bacteria to build up and can lead to cavities, gingivitis,
-						and gum disease. Your dentist will work closely with your
-						orthodontist to make sure that your teeth stay clean and healthy
-						while wearing braces.
-					</p>
-				</Col>
-			</Row>
-			<Row className="text-b">
-				<Col md={12} lg={12} className="text-center">
-					<div className="section-title text-bc" data-aos="fade">
-						<h1>How Do I Schedule My Next Checkup?</h1>
-					</div>
-					<p className="w-50 m-auto content-inner text-bc" data-aos="fade">
-						Simply call our practice! Our front desk staff will be happy to help
-						schedule your next dental checkup at your convenience. If you are a
-						new patient, please let us know and we will provide you with all the
-						information you need for your first dental visit.
 					</p>
 				</Col>
 			</Row>

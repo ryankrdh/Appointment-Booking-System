@@ -46,6 +46,10 @@
 	font-size: 26px;
 }
 
+.card-content h3:hover {
+	color: #eda84e !important;
+}
+
 .card-meta span {
 	font-weight: 300;
 	font-size: 16px;

@@ -8,7 +8,7 @@ import directionMap from '../../../Images/a-direction-map.png';
 const Details = () => {
 	useEffect(() => {
 		AOS.init({
-			duration: 2000,
+			duration: 1500,
 		});
 		AOS.refresh();
 	}, []);

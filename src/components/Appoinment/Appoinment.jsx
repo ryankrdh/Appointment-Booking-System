@@ -130,7 +130,7 @@ const Appoinment = () => {
 								</Col>
 								<Link to="/messagereceived">
 									<button className="theme-btn btn-fill form-btn mt-5 form-control">
-										Submit
+										<span className="submit-text">Submit</span>
 									</button>
 								</Link>
 							</form>

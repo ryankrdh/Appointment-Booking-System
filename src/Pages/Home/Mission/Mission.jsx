@@ -3,24 +3,22 @@ import 'aos/dist/aos.css';
 import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import myPhoto from '../../../Images/a-Ryan.jpg';
-import pomAnimated from '../../../Images/a-small-pom.gif';
 import './Mission.css';
 
 const About = () => {
-	// sets the animation duration
 	useEffect(() => {
 		AOS.init({
-			duration: 1000,
+			duration: 600,
 		});
 		AOS.refresh();
 	}, []);
 	return (
-		<section className="about-wrapper">
+		<section className="mission-wrapper">
 			<Container>
 				<Row>
 					<Col md={12} lg={6}>
-						<div className="about-right mt-5">
-							<div className="about-content text-start" data-aos="slide-up">
+						<div className="mission-left mt-5">
+							<div className="mission-content text-start" data-aos="zoom-in">
 								<h1>Our Mission:</h1>
 								<p>
 									Our mission as a dental team is to work together as a unit to
@@ -32,26 +30,15 @@ const About = () => {
 									latest and best treatment modalities, materials, sterilization
 									techniques, and technology.
 								</p>
-								<a href="/dentist">Meet the Team</a>
-							</div>
-							<div className="about-img">
-								<img
-									src={pomAnimated}
-									alt="pom-animated"
-									className="img-fluid pom-animated"
-								/>
+								<a href="/team">Meet the Team</a>
 							</div>
 						</div>
 					</Col>
-					<Col md={12} lg={6}>
-						<div className="about-img">
-							<img
-								src={myPhoto}
-								alt="myPhoto"
-								className="img-fluid my-photo mt-5"
-							/>
+					<Col md={12} lg={6} data-aos="zoom-in">
+						<div className="about-img center-name-photo">
+							<img src={myPhoto} alt="myPhoto" className=" my-photo mt-5" />
 						</div>
-						<p className="text-align m-2">Ryan Kim</p>
+						<p className="mt-2 my-name">Ryan Kim</p>
 					</Col>
 				</Row>
 			</Container>

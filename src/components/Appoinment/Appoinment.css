@@ -75,19 +75,21 @@ textarea.form-control {
 }
 
 .theme-btn {
-	background-color: #45e8c2;
+	background-color: #c9e7ff;
 	color: #006;
 	font-weight: 500;
 	padding: 10px;
-	/* border: 3px solid #94c0e5; */
 	border-radius: 5px;
 	cursor: pointer;
 	height: 50px;
-	/* transition: background-color 0.5s; */
 }
 
 .form-btn:hover {
 	border: 3px solid #94c0e5 !important;
 	border-radius: 5px;
 	transition: background-color 0.2s;
+}
+
+.form-btn:hover .submit-text {
+	color: #eda84e !important;
 }

@@ -6,64 +6,50 @@
 	position: relative;
 }
 
-.hyg-animated {
-	position: relative;
-	left: 150px;
-	animation: movebounce 2s ease-in-out infinite;
-	animation-delay: 100ms;
-	animation-direction: alternate;
-	width: 70%;
-	height: auto;
-}
-
-.pom-animated {
-	position: relative;
-	left: 150px;
-	top: -50px;
-	animation: movebounce 2.5s ease-in-out infinite;
-	animation-delay: 100ms;
-	animation-direction: alternate;
-	width: 20%;
-	height: auto;
-}
-
 .about-content h1 {
 	margin-bottom: 20px;
 	font-family: 'marker felt', sans-serif;
 	font-weight: 400;
 }
 
-.about-content p {
+.mission-content p {
 	color: #000000;
 	font-family: 'josefin sans', sans-serif;
 }
 
-.about-content a,
+.mission-content a,
 .single-service-box a {
 	margin-top: 15px;
-	color: #44d666;
+	color: #94c0e5;
 	font-size: 14px;
 	text-decoration: none;
 	line-height: 15px;
 	font-weight: 500;
 	padding-bottom: 5px;
-	display: inline-block;
-	border-bottom: 2px solid #44d666;
+
+	border-bottom: 2px solid #94c0e5;
 	transition: all 0.2s ease 0s;
 }
 
-.about-content a:hover {
-	color: #5499e3;
+.mission-content a:hover {
+	color: #eda84e;
 }
 
+.center-name-photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .my-photo {
 	width: 500px;
 	height: auto;
 	border-radius: 10%;
 }
 
-/* @media only screen and (max-width: 426px) {
-	.hyg-animated {
-		left: 80px;
-	}
-} */
+.my-name {
+	font-family: 'Josefin sans', sans-serif;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

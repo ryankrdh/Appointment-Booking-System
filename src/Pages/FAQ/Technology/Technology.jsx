@@ -19,10 +19,13 @@ const Achivement = () => {
 				</Row>
 				<Row>
 					<Col>
-						<video autoPlay loop muted className="market-video">
-							<source src={marketingVideo} type="video/mp4" />
-							Your browser does not support the video tag.
-						</video>
+						<video
+							src={marketingVideo}
+							autoPlay
+							loop
+							muted
+							className="market-video"
+						/>
 					</Col>
 				</Row>
 			</Container>
