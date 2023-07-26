@@ -38,30 +38,21 @@ const Appoinment = () => {
 		setTreatmentPreference(event.target.value);
 	};
 
-	// Email validation
+	// Input validation
 	const [email, setEmail] = useState('');
 	const [emailError, setEmailError] = useState('');
-
-	// const validateEmail = () => {
-	// 	const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-	// 	if (!isValidEmail) {
-	// 		setEmailError('Please enter a valid email address.');
-	// 	} else {
-	// 		setEmailError('');
-	// 		navigate('/messagereceived');
-	// 	}
-	// };
-
-	// First name and last name validation
 	const [firstName, setFirstName] = useState('');
-	const [lastName, setLastName] = useState('');
 	const [firstNameError, setFirstNameError] = useState('');
+	const [lastName, setLastName] = useState('');
 	const [lastNameError, setLastNameError] = useState('');
+	const [phoneNumber, setPhoneNumber] = useState('');
+	const [phoneNumberError, setPhoneNumberError] = useState('');
 
 	const validateInput = () => {
 		const isValidFirstName = /^[a-zA-Z]+$/.test(firstName);
 		const isValidLastName = /^[a-zA-Z]+$/.test(lastName);
 		const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+		const isValidPhoneNumber = /^[0-9]{10}$/.test(phoneNumber);
 		if (!isValidEmail) {
 			setEmailError('Please enter a valid email address.');
 		} else {
@@ -77,30 +68,28 @@ const Appoinment = () => {
 		} else {
 			setLastNameError('');
 		}
-		if (isValidEmail && isValidFirstName && isValidLastName) {
+		if (!isValidPhoneNumber) {
+			setPhoneNumberError('Please enter a valid phone number');
+		} else {
+			setPhoneNumberError('');
+		}
+		if (
+			isValidEmail &&
+			isValidFirstName &&
+			isValidLastName &&
+			isValidPhoneNumber
+		) {
 			setFirstNameError('');
 			setLastNameError('');
 			setEmailError('');
+			setPhoneNumberError('');
 			navigate('/loading');
 		}
 	};
 
-	// const validateName = () => {
-	// 	const isValidFirstName = /^[a-zA-Z]+$/.test(firstName);
-	// 	const isValidLastName = /^[a-zA-Z]+$/.test(lastName);
-	// 	if (!isValidFirstName || !isValidLastName) {
-	// 		setNameError('Please enter a valid first and last name.');
-	// 	} else {
-	// 		setNameError('');
-	// 		navigate('/messagereceived');
-	// 	}
-	// };
-
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		validateInput();
-		// validateName();
-		// validateEmail();
 	};
 
 	return (
@@ -122,7 +111,7 @@ const Appoinment = () => {
 										onChange={(e) => setFirstName(e.target.value)}
 									/>
 									{firstNameError && (
-										<p className="error-text-name">{firstNameError}</p>
+										<p className="error-text">{firstNameError}</p>
 									)}
 								</Col>
 								<Col md={3} lg={3}>
@@ -134,7 +123,7 @@ const Appoinment = () => {
 										onChange={(e) => setLastName(e.target.value)}
 									/>
 									{lastNameError && (
-										<p className="error-text-name">{lastNameError}</p>
+										<p className="error-text">{lastNameError}</p>
 									)}
 								</Col>
 								<Col md={6} lg={6}>
@@ -145,16 +134,19 @@ const Appoinment = () => {
 										value={email}
 										onChange={(e) => setEmail(e.target.value)}
 									/>
-									{emailError && (
-										<p className="error-text-email">{emailError}</p>
-									)}
+									{emailError && <p className="error-text">{emailError}</p>}
 								</Col>
 								<Col md={6} lg={6}>
 									<input
 										type="phone"
-										placeholder="Phone Number"
+										placeholder="6356472883 10-Digit Phone Number"
 										className="form-control"
+										value={phoneNumber}
+										onChange={(e) => setPhoneNumber(e.target.value)}
 									/>
+									{phoneNumberError && (
+										<p className="error-text">{phoneNumberError}</p>
+									)}
 								</Col>
 								<Col md={4} lg={4} className="doctor-pref ">
 									<select

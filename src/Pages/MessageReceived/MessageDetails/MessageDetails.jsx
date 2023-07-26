@@ -1,10 +1,15 @@
-import React from 'react';
+import { React } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import ryanPhoto from '../../../Images/a-Ryan1.jpg';
 import toothRun from '../../../Images/a-tooth-run.gif';
 import './MessageDetails.css';
 
 const MessageDetails = () => {
+	window.scrollTo({
+		top: 0,
+		left: 0,
+		behavior: 'instant',
+	});
 	return (
 		<div className="message-wrapper">
 			<Row>
@@ -16,11 +21,7 @@ const MessageDetails = () => {
 				</Col>
 			</Row>
 			<Row>
-				<Col
-					lg={12}
-					className="m-4 d-flex justify-content-center"
-					// className="text-center"
-				>
+				<Col lg={12} className="m-4 d-flex justify-content-center">
 					<img src={ryanPhoto} alt="ryanPhoto" className="about-my-photo" />
 				</Col>
 			</Row>
