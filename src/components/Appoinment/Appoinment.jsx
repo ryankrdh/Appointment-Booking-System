@@ -55,7 +55,8 @@ const Appoinment = () => {
 	// First name and last name validation
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
-	const [nameError, setNameError] = useState('');
+	const [firstNameError, setFirstNameError] = useState('');
+	const [lastNameError, setLastNameError] = useState('');
 
 	const validateInput = () => {
 		const isValidFirstName = /^[a-zA-Z]+$/.test(firstName);
@@ -63,14 +64,24 @@ const Appoinment = () => {
 		const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 		if (!isValidEmail) {
 			setEmailError('Please enter a valid email address.');
-		} else if (!isValidFirstName) {
-			setNameError('Please enter a valid first name.');
-		} else if (!isValidLastName) {
-			setNameError('Please enter a valid last name.');
 		} else {
-			setNameError('');
 			setEmailError('');
-			navigate('/messagereceived');
+		}
+		if (!isValidFirstName) {
+			setFirstNameError('Please enter a valid first name.');
+		} else {
+			setFirstNameError('');
+		}
+		if (!isValidLastName) {
+			setLastNameError('Please enter a valid last name.');
+		} else {
+			setLastNameError('');
+		}
+		if (isValidEmail && isValidFirstName && isValidLastName) {
+			setFirstNameError('');
+			setLastNameError('');
+			setEmailError('');
+			navigate('/loading');
 		}
 	};
 
@@ -110,7 +121,9 @@ const Appoinment = () => {
 										value={firstName}
 										onChange={(e) => setFirstName(e.target.value)}
 									/>
-									{nameError && <p className="error-text-name">{nameError}</p>}
+									{firstNameError && (
+										<p className="error-text-name">{firstNameError}</p>
+									)}
 								</Col>
 								<Col md={3} lg={3}>
 									<input
@@ -120,7 +133,9 @@ const Appoinment = () => {
 										value={lastName}
 										onChange={(e) => setLastName(e.target.value)}
 									/>
-									{nameError && <p className="error-text-name">{nameError}</p>}
+									{lastNameError && (
+										<p className="error-text-name">{lastNameError}</p>
+									)}
 								</Col>
 								<Col md={6} lg={6}>
 									<input

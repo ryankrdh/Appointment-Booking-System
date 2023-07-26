@@ -9,6 +9,7 @@ import Header from './Pages/Home/Header/Header.jsx';
 import Home from './Pages/Home/Home/Home.jsx';
 import FAQ from './Pages/FAQ/FAQ/Faq.jsx';
 import MessageReceived from './Pages/MessageReceived/MessageReceived/MessageReceived';
+import Loading from './Pages/Loading/Loading';
 // import NotFound from './Pages/NotFound/NotFound';
 import Service from './Pages/Services/Service/Service';
 
@@ -28,6 +29,7 @@ function App() {
 					<Route path="/faq" element={<FAQ />} />
 					{/* <Route path="/approved" element={<Approved />} /> */}
 					<Route path="/messagereceived" element={<MessageReceived />} />
+					<Route path="/loading" element={<Loading />} />
 					{/* <Route path="*" element={<NotFound />} /> */}
 				</Routes>
 				<Footer />

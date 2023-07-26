@@ -1,10 +1,11 @@
 .message-wrapper {
-	background-color: #c9e7ff;
+	background-color: #d9efff;
 }
 
 .about-thank-you {
 	color: #279b61;
 	font-family: 'Josefin Sans', serif-sans;
+	font-size: 25px;
 }
 
 .about-my-photo {
