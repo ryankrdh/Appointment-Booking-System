@@ -93,3 +93,9 @@ textarea.form-control {
 .form-btn:hover .submit-text {
 	color: #eda84e !important;
 }
+
+.error-text {
+	color: #eda84e;
+	font-size: 15px;
+	margin-top: 5px;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './Appoinment.css';
@@ -9,14 +9,18 @@ import meloImage from '../../Images/a-melo.png';
 import bobaImage from '../../Images/a-boba.png';
 
 const Appoinment = () => {
+	// To go to another page
+	const navigate = useNavigate();
+
+	// Date Menu
 	const [selectedDate, setSelectedDate] = useState(null);
 
 	const handleDateChange = (date) => {
 		setSelectedDate(date);
 	};
 
+	// Doctor Menu
 	const [doctorPreference, setDoctorPreference] = useState('');
-
 	const handleDoctorChange = (event) => {
 		setDoctorPreference(event.target.value);
 	};
@@ -28,10 +32,64 @@ const Appoinment = () => {
 		selectedDoctorImage = bobaImage;
 	}
 
+	// Treatment Menu
 	const [treatmentPreference, setTreatmentPreference] = useState('');
-
 	const handleTreatmentChange = (event) => {
 		setTreatmentPreference(event.target.value);
+	};
+
+	// Email validation
+	const [email, setEmail] = useState('');
+	const [emailError, setEmailError] = useState('');
+
+	// const validateEmail = () => {
+	// 	const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+	// 	if (!isValidEmail) {
+	// 		setEmailError('Please enter a valid email address.');
+	// 	} else {
+	// 		setEmailError('');
+	// 		navigate('/messagereceived');
+	// 	}
+	// };
+
+	// First name and last name validation
+	const [firstName, setFirstName] = useState('');
+	const [lastName, setLastName] = useState('');
+	const [nameError, setNameError] = useState('');
+
+	const validateInput = () => {
+		const isValidFirstName = /^[a-zA-Z]+$/.test(firstName);
+		const isValidLastName = /^[a-zA-Z]+$/.test(lastName);
+		const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+		if (!isValidEmail) {
+			setEmailError('Please enter a valid email address.');
+		} else if (!isValidFirstName) {
+			setNameError('Please enter a valid first name.');
+		} else if (!isValidLastName) {
+			setNameError('Please enter a valid last name.');
+		} else {
+			setNameError('');
+			setEmailError('');
+			navigate('/messagereceived');
+		}
+	};
+
+	// const validateName = () => {
+	// 	const isValidFirstName = /^[a-zA-Z]+$/.test(firstName);
+	// 	const isValidLastName = /^[a-zA-Z]+$/.test(lastName);
+	// 	if (!isValidFirstName || !isValidLastName) {
+	// 		setNameError('Please enter a valid first and last name.');
+	// 	} else {
+	// 		setNameError('');
+	// 		navigate('/messagereceived');
+	// 	}
+	// };
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		validateInput();
+		// validateName();
+		// validateEmail();
 	};
 
 	return (
@@ -44,19 +102,37 @@ const Appoinment = () => {
 						</div>
 						<div className="appoinment-form">
 							<form action="#" className="row form-control">
-								<Col md={6} lg={6}>
+								<Col md={3} lg={3}>
 									<input
 										type="text"
-										placeholder="Full Name"
+										placeholder="First Name"
 										className="form-control"
+										value={firstName}
+										onChange={(e) => setFirstName(e.target.value)}
 									/>
+									{nameError && <p className="error-text-name">{nameError}</p>}
+								</Col>
+								<Col md={3} lg={3}>
+									<input
+										type="text"
+										placeholder="Last Name"
+										className="form-control"
+										value={lastName}
+										onChange={(e) => setLastName(e.target.value)}
+									/>
+									{nameError && <p className="error-text-name">{nameError}</p>}
 								</Col>
 								<Col md={6} lg={6}>
 									<input
 										type="email"
 										placeholder="Email"
 										className="form-control"
+										value={email}
+										onChange={(e) => setEmail(e.target.value)}
 									/>
+									{emailError && (
+										<p className="error-text-email">{emailError}</p>
+									)}
 								</Col>
 								<Col md={6} lg={6}>
 									<input
@@ -128,11 +204,12 @@ const Appoinment = () => {
 										className="form-control"
 									></textarea>
 								</Col>
-								<Link to="/messagereceived">
-									<button className="theme-btn btn-fill form-btn mt-5 form-control">
-										<span className="submit-text">Submit</span>
-									</button>
-								</Link>
+								<button
+									className="theme-btn btn-fill form-btn mt-5 form-control"
+									onClick={handleSubmit}
+								>
+									<span className="submit-text">Submit</span>
+								</button>
 							</form>
 						</div>
 					</Col>
