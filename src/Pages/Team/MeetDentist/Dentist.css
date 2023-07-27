@@ -1,28 +1,28 @@
 .dr-introduction {
-	padding: 50px 0;
+	padding: 5vw 0;
 	background-color: #d9efff;
 }
 
 .dr-introduction-txt h2 {
-	font-size: 36px;
-	line-height: 48px;
-	margin-bottom: 23px;
+	font-size: 4vw;
+	line-height: 5.3333vw;
+	margin-bottom: 2.3vw;
 	color: #222;
 	font-family: 'marker felt', sans-serif;
 }
 
 .dr-introduction-txt p {
-	margin-bottom: 15px;
+	margin-bottom: 1.5vw;
 	font-weight: 300;
 	color: #494949;
 	font-family: 'Josefin Sans', serif;
-	padding-bottom: 10px;
+	padding-bottom: 1vw;
 }
 
 .doctor-image-container {
-	width: 300px;
-	height: 300px;
-	border: 4px solid #94c0e5;
+	width: 30vw;
+	height: 30vw;
+	border: 0.2667vw solid #94c0e5;
 	border-radius: 50%;
 	overflow: hidden;
 	margin: 0 auto;
@@ -30,12 +30,46 @@
 }
 
 .doctor-boba-image-size {
-	/* width: 80%;
-	height: auto; */
-	width: 80%;
+	width: 22vw;
 	height: auto;
 	position: absolute; /* Use absolute positioning */
-	right: 20px; /* Move the image 20 pixels to the right */
+	right: 2.6667vw; /* Move the image 2.6667vw to the right */
 	top: 70%; /* Center the image vertically */
 	transform: translateY(-50%); /* Adjust vertical positioning using transform */
+}
+
+@media (max-width: 1050px) {
+	.doctor-image-container {
+		width: 40vw;
+		height: 40vw;
+		margin-top: 5rem;
+		margin-bottom: -3rem;
+	}
+	.doctor-boba-image-size {
+		width: 30vw;
+		height: auto;
+		position: absolute; /* Use absolute positioning */
+		right: 2.6667vw; /* Move the image 2.6667vw to the right */
+		top: 70%; /* Center the image vertically */
+		transform: translateY(
+			-50%
+		); /* Adjust vertical positioning using transform */
+	}
+}
+@media (max-width: 650px) {
+	.doctor-image-container {
+		width: 50vw;
+		height: 50vw;
+		margin-bottom: -3rem;
+	}
+	.doctor-boba-image-size {
+		width: 40vw;
+		height: auto;
+		position: absolute; /* Use absolute positioning */
+		right: 2.6667vw; /* Move the image 2.6667vw to the right */
+		top: 70%; /* Center the image vertically */
+		transform: translateY(
+			-50%
+		); /* Adjust vertical positioning using transform */
+	}
 }

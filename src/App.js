@@ -8,7 +8,6 @@ import Home from './Pages/Home/Home/Home.jsx';
 import FAQ from './Pages/FAQ/FAQ/Faq.jsx';
 import MessageReceived from './Pages/MessageReceived/MessageReceived/MessageReceived';
 import Loading from './Pages/Loading/Loading';
-import Service from './Pages/Services/Service/Service';
 
 function App() {
 	return (
@@ -19,7 +18,6 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/home" element={<Home />} />
 					<Route path="/team" element={<Team />} />
-					<Route path="/service" element={<Service />} />
 					<Route path="/directions" element={<Directions />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/faq" element={<FAQ />} />

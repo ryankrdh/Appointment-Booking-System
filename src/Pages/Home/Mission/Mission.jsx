@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import myPhoto from '../../../Images/a-Ryan.jpg';
 import './Mission.css';
 
-const About = () => {
+const Mission = () => {
 	useEffect(() => {
 		AOS.init({
 			duration: 600,
@@ -35,7 +35,7 @@ const About = () => {
 						</div>
 					</Col>
 					<Col md={12} lg={6} data-aos="zoom-in">
-						<div className="about-img center-name-photo">
+						<div className=" center-name-photo">
 							<img src={myPhoto} alt="myPhoto" className=" my-photo mt-5" />
 						</div>
 						<p className="mt-2 my-name">Ryan Kim</p>
@@ -46,4 +46,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default Mission;

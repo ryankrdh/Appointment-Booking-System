@@ -4,7 +4,7 @@
 
 .single-blog-card {
 	border-radius: 10px;
-	width: 100%;
+	width: auto;
 	height: 400px;
 	background-color: #fff;
 	box-shadow: 5.288px 11.876px 40px 0 #0000000d;

@@ -1,4 +1,4 @@
-.about-content-sec {
+.about-team-content-sec {
 	padding: 120px 0;
 }
 
@@ -11,8 +11,15 @@
 	font-family: 'josefin sans', sans-serif;
 }
 
+.team-photo-frame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
 .team-photo {
-	margin-top: 40px;
-	width: 100%;
-	height: auto;
+	min-width: 100%;
 }

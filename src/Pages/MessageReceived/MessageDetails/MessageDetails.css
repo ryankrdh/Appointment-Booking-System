@@ -8,13 +8,21 @@
 	font-size: 25px;
 }
 
-.about-my-photo {
-	width: 50%;
-	height: auto;
+.details-my-photo-div {
+	padding: 20px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.tooth-run-img {
+.details-my-photo {
+	width: 70%;
+	height: auto;
+	border-radius: 10%;
+}
+
+.details-tooth-run {
 	position: relative;
 	width: 20%;
-	height: 130px;
+	height: auto;
 }

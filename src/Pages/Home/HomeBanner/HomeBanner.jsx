@@ -7,7 +7,7 @@ import rowTeeth from '../../../Images/a-row-teeth.png';
 import rightHand from '../../../Images/a-right-hand.png';
 import './HomeBanner.css';
 
-const Banner = () => {
+const HomeBanner = () => {
 	useEffect(() => {
 		AOS.init({
 			duration: 2000,
@@ -16,8 +16,16 @@ const Banner = () => {
 	}, []);
 	return (
 		<section className="single-hero-slide ">
+			<Row>
+				<Col xs={12} md={12} sm={12} lg={12}>
+					<div className="hero-slide-phrase" data-aos="zoom-in">
+						<h2>Look forward to the dentist</h2>
+						<p>Your Smile Deserves Our Highest Attention</p>
+					</div>
+				</Col>
+			</Row>
 			<Row className="align-items-center">
-				<Col xs={4} md={4} sm={4} lg={4}>
+				<Col xs={6} md={6} sm={6} lg={6}>
 					<div className="hero-slide-right">
 						<div className="animate-img">
 							<img
@@ -29,13 +37,8 @@ const Banner = () => {
 						</div>
 					</div>
 				</Col>
-				<Col xs={4} md={4} sm={4} lg={4}>
-					<div className="hero-slide-phrase" data-aos="zoom-in">
-						<h2>Look forward to the dentist</h2>
-						<p>Your Smile Deserves Our Highest Attention</p>
-					</div>
-				</Col>
-				<Col xs={4} md={4} sm={4} lg={4}>
+
+				<Col xs={6} md={6} sm={6} lg={6}>
 					<div className="hero-slide-right">
 						<div className="animate-img">
 							<img
@@ -47,7 +50,8 @@ const Banner = () => {
 						</div>
 					</div>
 				</Col>
-
+			</Row>
+			<Row>
 				<Col xs={12} md={12} sm={12} lg={12}>
 					<div className="">
 						<img src={rowTeeth} alt="" className="img-fluid heroRowTeeth" />
@@ -58,4 +62,4 @@ const Banner = () => {
 	);
 };
 
-export default Banner;
+export default HomeBanner;

@@ -1,13 +1,11 @@
-.about-wrapper {
-	margin-bottom: 120px;
+.mission-wrapper {
+	padding: 10vw 0; /* Using viewport width for padding */
+	min-width: 100%;
+	overflow-x: hidden;
 }
 
-.about-mission {
-	position: relative;
-}
-
-.about-content h1 {
-	margin-bottom: 20px;
+.mission-content h1 {
+	margin-bottom: 2vw; /* Using viewport width for margin */
 	font-family: 'marker felt', sans-serif;
 	font-weight: 400;
 }
@@ -19,20 +17,20 @@
 
 .mission-content a,
 .single-service-box a {
-	margin-top: 15px;
+	margin-top: 1.5vw; /* Using viewport width for margin */
 	color: #94c0e5;
-	font-size: 14px;
+	font-size: 1.2rem; /* Using 'rem' for font size */
 	text-decoration: none;
-	line-height: 15px;
+	line-height: 1.5; /* Using unitless value for line-height */
 	font-weight: 500;
-	padding-bottom: 5px;
+	padding-bottom: 0.5vw; /* Using viewport width for padding */
 
-	border-bottom: 2px solid #94c0e5;
+	border-bottom: 0.2rem solid #94c0e5; /* Using 'rem' for border width */
 	transition: all 0.2s ease 0s;
 }
 
 .mission-content a:hover {
-	color: #eda84e;
+	color: #45e8c2;
 }
 
 .center-name-photo {
@@ -40,15 +38,16 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .my-photo {
-	width: 500px;
+	width: 80%;
 	height: auto;
 	border-radius: 10%;
 }
 
 .my-name {
 	font-family: 'Josefin sans', sans-serif;
-	font-size: 20px;
+	font-size: 1.6rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;

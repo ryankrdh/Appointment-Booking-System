@@ -1,12 +1,12 @@
 .appoinment-wrapper {
-	padding-bottom: 120px;
+	padding-bottom: 12vw;
 }
 
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: -15px;
-	margin-left: -15px;
+	margin-right: -1.5vw;
+	margin-left: -1.5vw;
 }
 
 .appoinment-form form input,
@@ -14,46 +14,48 @@
 	border-radius: 5px;
 	background-color: #fff;
 	box-shadow: 5.288px 11.876px 40px 0 rgb(0 0 0 / 10%);
-	height: 70px;
+	height: 3vw;
 	border: none;
-	line-height: 70px;
+	line-height: 7vw;
 	width: 100%;
 	color: #666;
-	font-size: 18px;
-	padding-left: 30px;
+	font-size: 1vw;
+	padding-left: 3vw;
 	font-weight: 400;
-	margin-top: 30px;
+	margin-top: 3vw;
 }
 
 .doctor-pref {
-	margin-top: 45px;
+	margin-top: 2.5vw;
 }
 
 .doctor-pref select {
 	font-weight: 400;
-	padding: 10px;
+	padding: 0.5vw;
 	border-radius: 5px;
 	color: #666;
-	height: 40px;
-	width: auto;
+	height: 4vw;
+	width: 15vw;
+	font-size: 1vw;
 }
 
 .treatment-pref {
-	margin-top: 45px;
+	margin-top: 2.5vw;
 }
 
 .treatment-pref select {
 	font-weight: 400;
-	padding: 10px;
+	padding: 0.5vw;
 	border-radius: 5px;
 	color: #666;
-	height: 40px;
-	width: auto;
+	height: 4vw;
+	width: 15vw;
+	font-size: 1vw;
 }
 
 .doctor-image {
-	margin-left: 10px;
-	width: 50px;
+	margin-left: 1vw;
+	width: 4vw;
 	height: auto;
 }
 
@@ -61,41 +63,44 @@
 	font-weight: 400;
 	color: #666 !important;
 }
+
 textarea.form-control {
-	min-height: 400px;
-	border: '3px solid #94c0e5';
+	min-height: 40vh;
+	border: 0.3vw solid #94c0e5;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 1vw;
 	overflow: auto;
 	resize: vertical;
+	font-size: 1vw;
 }
 
 .form-btn {
-	width: 250px;
+	width: 15vw;
 }
 
 .theme-btn {
 	background-color: #d9efff;
 	color: #006;
 	font-weight: 500;
-	padding: 10px;
+	padding: 1vw;
 	border-radius: 5px;
 	cursor: pointer;
-	height: 50px;
+	height: 3.5vw;
+	font-size: 1vw;
 }
 
 .form-btn:hover {
-	border: 3px solid #94c0e5 !important;
+	border: 0.3vw solid #94c0e5 !important;
 	border-radius: 5px;
 	transition: background-color 0.2s;
 }
 
 .form-btn:hover .submit-text {
-	color: #eda84e !important;
+	color: #45e8c2 !important;
 }
 
 .error-text {
-	color: #eda84e;
-	font-size: 15px;
-	margin-top: 5px;
+	color: #45e8c2;
+	font-size: 1vw;
+	margin-top: 0.5vw;
 }

@@ -49,7 +49,15 @@ const Services = (props) => {
 								<p>{flippedDescription}</p>
 							</div>
 						) : (
-							<video src={video} autoPlay loop muted className="video" />
+							<video
+								src={video}
+								autoPlay
+								loop
+								muted
+								playsInline
+								disableRemotePlayback
+								className="video"
+							/>
 						)}
 					</div>
 					<h3>{title}</h3>

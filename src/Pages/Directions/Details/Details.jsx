@@ -104,6 +104,8 @@ const Details = () => {
 										autoPlay
 										loop
 										muted
+										playsInline
+										disableRemotePlayback
 										className="video"
 									/>
 								</div>

@@ -1,25 +1,15 @@
 .direction-details-sec {
-	padding: 120px 0;
+	padding: 8vw 0;
 	background-color: #d9efff;
 }
 
-.direction-details li {
-	padding: 8px;
-}
-
-.direction-details p {
-	padding: 8px;
+.direction-details {
+	padding: 0.8vw;
+	font-size: auto;
 }
 
 .single-direction-box-detail {
 	width: 100%;
 	height: auto;
-	padding: 25px;
+	padding: 2.5vw;
 }
-
-/* @media screen and (max-width: 1050px) {
-	.single-direction-box-detail {
-		width: 100%;
-		height: auto;
-	}
-} */

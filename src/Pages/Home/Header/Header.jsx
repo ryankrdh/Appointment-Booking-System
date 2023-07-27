@@ -6,8 +6,6 @@ import logo from '../../../Images/a-tooth1.gif';
 import './Header.css';
 
 const Header = () => {
-	// const { user, logout } = useAuth();
-
 	return (
 		<div className="head-bg">
 			<Navbar className="navbar" collapseOnSelect expand="lg">
@@ -30,34 +28,12 @@ const Header = () => {
 							<Link to="/team" className="list-item text-decoration-none">
 								Meet The Team
 							</Link>
-							<Link to="/service" className="list-item text-decoration-none">
-								Service
-							</Link>
 							<Link to="/directions" className="list-item text-decoration-none">
 								Directions
 							</Link>
 							<Link to="/contact" className="list-item text-decoration-none">
 								Contact
 							</Link>
-							{/* {user.email ? (
-								<button
-									type="button"
-									className="btn btn-danger"
-									onClick={logout}
-								>
-									Log Out
-								</button>
-							) : (
-								<Link to="/login" type="button" className="btn btn-danger">
-									Login
-								</Link>
-							)}
-							{user.email && (
-								<Navbar.Text>
-									<FontAwesomeIcon icon={faUser} />
-									<span className="userName">{user.displayName}</span>
-								</Navbar.Text>
-							)} */}
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

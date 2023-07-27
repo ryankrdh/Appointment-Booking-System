@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import award from '../../../Images/a-bsb.png';
 import './Awards.css';
 
-const Testimonial = () => {
+const Awards = () => {
 	useEffect(() => {
 		AOS.init({
 			duration: 2000,
@@ -13,7 +13,7 @@ const Testimonial = () => {
 		AOS.refresh();
 	}, []);
 	return (
-		<section className="testimonial-wrapper">
+		<section className="awards-wrapper">
 			<Container>
 				<Row>
 					<Col sm={12}>
@@ -26,7 +26,7 @@ const Testimonial = () => {
 					<Col md={6} lg={4} sm={12}>
 						<div className="award-box text-center" data-aos="fade-right ">
 							<div className="award-img">
-								<img src={award} alt="" />
+								<img src={award} alt="Award" />
 							</div>
 							<h3 className="mt-4">Best of the Best!</h3>
 						</div>
@@ -47,4 +47,4 @@ const Testimonial = () => {
 	);
 };
 
-export default Testimonial;
+export default Awards;

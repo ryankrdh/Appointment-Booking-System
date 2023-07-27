@@ -1,9 +1,9 @@
-.about-content-sec {
+.faq-content-sec {
 	padding: 0;
 	background-color: white;
 }
 
-.about-content-sec p {
+.faq-content-sec p {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -33,6 +33,18 @@
 
 .text-bc {
 	color: #94c0e5;
+}
+
+/* Add this CSS to your existing CSS file or style section */
+
+ul {
+	text-align: start;
+	list-style-position: inside; /* This will align the list items to the center */
+	padding-left: 10%; /* Remove the default left padding/margin */
+}
+
+ul li {
+	margin-left: 0; /* Remove the default left margin for list items */
 }
 
 /* for mobile responsive */

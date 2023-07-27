@@ -1,5 +1,5 @@
 .banner-all {
-	padding: 70px 0 50px 0;
+	padding: 7vw 0 5vw 0;
 	background-color: #94c0e5;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .team-photo {
-	width: 400px;
+	width: 40vw;
 	height: auto;
 	border-radius: 10%;
 }
@@ -28,7 +28,7 @@
 	width: 40%;
 	height: auto;
 	right: 0%;
-	bottom: -30px;
+	bottom: -3vw;
 	animation: movebounce 3s linear infinite;
 }
 
@@ -37,6 +37,18 @@
 	width: 25%;
 	height: auto;
 	right: 0%;
-	bottom: -30px;
+	bottom: -3vw;
 	animation: movebounce 2.5s linear infinite;
+}
+
+@keyframes movebounce {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(2vw);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }

@@ -1,20 +1,20 @@
-.testimonial-wrapper {
-	padding: 120px 0;
+.awards-wrapper {
+	padding: 10% 0;
 }
 
 .award-box {
 	border-radius: 10px;
 	background-color: rgba(48, 236, 242, 0.05);
-	box-shadow: 5.288px 11.876px 40px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0.5288rem 1.1876rem 4rem 0 rgba(0, 0, 0, 0.05);
 	text-align: center;
-	padding: 60px 58px 50px;
+	padding: 6% 5.8% 5%;
 }
 
 .award-img {
 	position: relative;
-	width: 233px;
-	height: 233px;
-	margin-bottom: 24px;
+	width: 16.3vw;
+	height: 16.3vw;
+	margin-bottom: 2.4%;
 	overflow: hidden;
 	border-radius: 50%;
 	z-index: 1;
@@ -44,8 +44,8 @@
 }
 
 .award-box h3 {
-	font-size: 24px;
-	line-height: 36px;
+	font-size: 200%;
+	line-height: 3.6rem;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .review-item h5 {
-	font-size: 18px;
-	line-height: 26px;
+	font-size: 1.8rem;
+	line-height: 2.6rem;
 	font-family: 'Josefin Sans', sans-serif;
 }

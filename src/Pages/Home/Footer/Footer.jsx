@@ -7,7 +7,7 @@ const Footer = () => {
 		<div className="footer-bg">
 			<Container>
 				<Row className="text-white">
-					<Col xs={6} md={4}>
+					<Col xs={12} md={4}>
 						<div className="single-footer-widget">
 							<div className="widget-title">
 								<h2>Resources</h2>
@@ -40,22 +40,22 @@ const Footer = () => {
 							</div>
 						</div>
 					</Col>
-					<Col xs={6} md={4}>
+					<Col xs={12} md={4}>
 						<div className="single-footer-widget">
 							<div className="widget-title">
 								<h2>Services</h2>
 							</div>
 							<div className="widget-content">
-								<NavLink href="/service" className="footer-link">
+								<NavLink href="/home" className="footer-link">
 									General Dentistry
 								</NavLink>
-								<NavLink href="/service" className="footer-link">
+								<NavLink href="/home" className="footer-link">
 									Same-Day Crowns
 								</NavLink>
-								<NavLink href="/service" className="footer-link">
+								<NavLink href="/home" className="footer-link">
 									Orthodontics
 								</NavLink>
-								<NavLink href="/service" className="footer-link">
+								<NavLink href="/home" className="footer-link">
 									Oral Surgery
 								</NavLink>
 							</div>

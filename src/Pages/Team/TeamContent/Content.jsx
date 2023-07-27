@@ -12,7 +12,7 @@ const Content = () => {
 		AOS.refresh();
 	}, []);
 	return (
-		<section className="about-content-sec">
+		<section className="about-team-content-sec">
 			<Container>
 				<Row>
 					<Col md={12} lg={8} className="text-center" data-aos="zoom-in-up">
@@ -33,7 +33,7 @@ const Content = () => {
 						</p>
 					</Col>
 					<Col md={12} lg={4}>
-						<div>
+						<div className="team-photo-frame">
 							<img
 								src={teamPhoto}
 								alt="teamPhoto"

@@ -5,7 +5,7 @@ import './LeaveItToUs.css';
 
 const LeaveItToUs = () => {
 	return (
-		<section className="trustTeam">
+		<section className="trustTeam-wrapper">
 			<Container>
 				<Row className="align-items-center">
 					<Col lg={6}>

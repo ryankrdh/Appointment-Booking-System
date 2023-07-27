@@ -13,7 +13,7 @@ const MessageDetails = () => {
 	return (
 		<div className="message-wrapper">
 			<Row>
-				<Col>
+				<Col lg={12}>
 					<h5 className="text-center mt-4 about-thank-you">
 						Thank you, we'll reach out to you shortly regarding your
 						appointment!
@@ -21,13 +21,17 @@ const MessageDetails = () => {
 				</Col>
 			</Row>
 			<Row>
-				<Col lg={12} className="m-4 d-flex justify-content-center">
-					<img src={ryanPhoto} alt="ryanPhoto" className="about-my-photo" />
+				<Col lg={12}>
+					<div className="details-my-photo-div">
+						<img src={ryanPhoto} alt="ryanPhoto" className="details-my-photo" />
+					</div>
 				</Col>
 			</Row>
 			<Row>
-				<Col lg={12} className=" text-center">
-					<img src={toothRun} alt="toothRun" />
+				<Col lg={12}>
+					<div className="details-my-photo-div">
+						<img src={toothRun} alt="toothRun" className="details-tooth-run" />
+					</div>
 				</Col>
 			</Row>
 		</div>

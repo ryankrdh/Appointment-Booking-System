@@ -1,9 +1,18 @@
 .contactUs-wrapper {
-	padding: 120px 0;
+	padding: 80px 0;
 	background-color: #d9efff;
 }
 
 .single-contactUs {
+	justify-content: center;
+	text-align: center;
+	flex: auto;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 20px;
+	font-size: auto;
+}
+
+.single-contact-box-detail {
+	width: 100%;
+	height: auto;
+	padding: 25px;
 }

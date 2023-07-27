@@ -24,6 +24,8 @@ const Achivement = () => {
 							autoPlay
 							loop
 							muted
+							playsInline
+							disableRemotePlayback
 							className="market-video"
 						/>
 					</Col>

@@ -32,7 +32,7 @@
 }
 
 .single-service-box:hover {
-	background: #45e8c2;
+	background: #94c0e5;
 	cursor: cell;
 	border-color: transparent;
 }
@@ -58,7 +58,7 @@
 }
 
 .single-service-box a:hover {
-	color: #eda84e !important;
+	color: #45e8c2 !important;
 }
 
 /* testing */
