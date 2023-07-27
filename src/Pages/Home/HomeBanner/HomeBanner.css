@@ -2,7 +2,6 @@
 	background-color: #94c0e5;
 	padding-top: 10%;
 	padding-bottom: 0%;
-	/* font-family: 'Josefin Sans', sans-serif; */
 	font-family: 'marker felt', sans-serif;
 }
 
@@ -22,19 +21,10 @@
 	font-family: 'Josefin sans', serif;
 }
 
-/* .hero-slide-center button {
-	margin-top: 40px;
-	font-weight: 700;
-	outline: none !important;
-	cursor: pointer;
-	font-family: 'Roboto Slab', serif;
-} */
-
 .heroRowTeeth {
 	position: relative;
 	width: 100%;
 	z-index: 1;
-	/* top: auto; */
 }
 
 .animate-img .right-hand {
