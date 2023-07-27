@@ -97,7 +97,7 @@ const Details = () => {
 							</div>
 						</Col>
 						<Col md={12} lg={4}>
-							<div className="single-service-box-detail" data-aos="flip-left">
+							<div className="single-direction-box-detail" data-aos="flip-left">
 								<div className="service-icon">
 									<video
 										src={dentalDirection}
@@ -112,7 +112,7 @@ const Details = () => {
 								<img
 									src={directionMap}
 									alt="directionMap"
-									className="single-service-box-detail"
+									className="single-direction-box-detail"
 									data-aos="flip-left"
 								/>
 							</div>

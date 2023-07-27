@@ -10,3 +10,16 @@
 .direction-details p {
 	padding: 8px;
 }
+
+.single-direction-box-detail {
+	width: 100%;
+	height: auto;
+	padding: 25px;
+}
+
+/* @media screen and (max-width: 1050px) {
+	.single-direction-box-detail {
+		width: 100%;
+		height: auto;
+	}
+} */
