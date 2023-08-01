@@ -1,6 +1,6 @@
-# Mellow Dental
+# Appointment Booking System for Mellow Dental
 
-### Welcome to my Dental Website!
+### Welcome to my Appointment Booking System!
 
 Click ⬇ to START!<br><br>
 <a href="https://mellow-dental.surge.sh/"><img src="src/Images/a-doctor-melo.png" width="100" height="140"></a>
